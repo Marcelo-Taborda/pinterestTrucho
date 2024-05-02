@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    vertical-align: middle;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+.imageOriginal {
+    width: 100%;
+}
+.imageOriginal img {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    columns: 5;
+    column-gap: 20px;
+    padding: 0 10px;
+}
+.container h1 {
+    width: 100%;
+}
+.white {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+.box {
+    break-inside: avoid;
+    position: relative;
+}
+.box img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+body {
+    background-color: #3c3c3c;
+}
+
+.button {
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
+    /* que este centrado horizontalmente */
+    left: 50%;
+    transform: translateX(-50%);
+    /* estilos para el boton */
+    background-color: #3c3c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px;
+    cursor: pointer;
+/*     transition: all .3s ease;
+ */    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+/* .button:hover {
+    background-color: #fff;
+    color: #3c3c3c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+} */
+
+.button:active {
+    box-shadow: 0 0 10px red;
+}
+
+.overlay:hover img {
+    /* oscurecer la imagen */
+    filter: brightness(50%);
+}
+.overlay img {
+    transition: all .2s ease;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+.favorite {
+    background-color: red;
+}
+
+/* responsive */
+@media screen and (max-width: 1600px) {
+    .container {
+        columns: 4;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        columns: 3;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        columns: 3;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        columns: 2;
+    }
+}
+
